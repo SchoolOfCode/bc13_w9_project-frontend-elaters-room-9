@@ -1,0 +1,32 @@
+#greeting {
+    position: absolute;
+    width: 352px;
+    height: 71px;
+    left: 540px;
+    top: 117px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 71px;
+    
+
+    color: rgba(1, 42, 74, 1);
+}
+.dark #greeting {
+    position: absolute;
+    width: 352px;
+    height: 71px;
+    left: 540px;
+    top: 117px;
+
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 71px;
+    
+
+    color: rgba(97, 165, 194, 1);
+}
