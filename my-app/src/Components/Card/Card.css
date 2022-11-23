@@ -1,10 +1,45 @@
-#card{
-    color: black;
-    width: 100 px;
-    height: 100px;
-    display: flex;
+
+
+.container {
+    width: 20vw;
+    height: 33vh;
+    border-radius: 10px;
+    color: #012A4A;
+    font-size: 13px;
+    padding-right: 5px;
+    padding-left: 5px;
+    
 }
-img{
-    width: 60px;
-    height: 50px;
+
+img {
+    width: 8vw;
+    height: 16vh;
+    padding-bottom: 15px;
+    padding-top: 7vh;
+
+}
+
+#FlashCards{
+    background-color: #89C2D9;
+    
+}
+
+#Calendar{
+    background-color: #61A5C2;
+}
+
+#NotesandDocuments {
+    background-color: #468FAF;
+}
+
+#Games {
+    background-color: #89C2D9;
+}
+
+#Videos {
+    background-color: #61A5C2;
+}
+
+#Exercise {
+    background-color: #468FAF;
 }
