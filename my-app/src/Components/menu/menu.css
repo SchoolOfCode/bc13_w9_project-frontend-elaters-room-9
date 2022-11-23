@@ -1,0 +1,28 @@
+.container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+.bar1{
+    width: 35px;
+    height: 5px;
+    background-color: #468FAF;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+.bar2{
+        width: 35px;
+        height: 5px;
+        background-color: #61A5C2;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+.bar3{
+        width: 35px;
+        height: 5px;
+        background-color: #89C2D9;
+        margin: 6px 0;
+        transition: 0.4s;
+          
+  }
+  
