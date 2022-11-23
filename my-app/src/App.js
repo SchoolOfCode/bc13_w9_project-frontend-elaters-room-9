@@ -15,30 +15,26 @@ function App() {
         alt="FlashCards"
         id="FlashCards"
         Title="FlashCards"
-        link={}
       />
       <Card
         src={LightModeCalendar}
         alt="Calendar"
         id="Calendar"
         Title="Calendar"
-        link={}
       />
       <Card
         src={LightModeDocument}
         alt="Notes and Documents"
         id="NotesandDocuments"
         Title="Notes and Documents"
-        link={}
       />
-      <Card src={LightModeGames} alt="Games" id="Games" Title="Games" link={}/>
-      <Card src={LightModeVideo} alt="Videos" id="Videos" Title="Videos" link={}/>
+      <Card src={LightModeGames} alt="Games" id="Games" Title="Games" />
+      <Card src={LightModeVideo} alt="Videos" id="Videos" Title="Videos" />
       <Card
         src={LightModeFitness}
         alt="Exercise - an App for 30 Minute daily workout"
         id="Exercise"
         Title="Exercise"
-        link={}
       />
     </div>
   );
