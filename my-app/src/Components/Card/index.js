@@ -1,9 +1,12 @@
 import Image from "../Image/index";
 import "./Card.css";
+import Title from "../Title/index";
+
 function Card(props) {
   return (
-    <div id="card">
+    <div className="container" id={props.id}>
       <Image src={props.src} alt={props.alt} />
+      <Title Title={props.Title} />
     </div>
   );
 }

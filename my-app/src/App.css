@@ -1,3 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  column-gap: 5px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 20vh;
+  margin-right: 15vw;
+  margin-left: 15vw;
+ width: 70vw;
+ 
+
+}
 
 .App {
   width: 100vw;
