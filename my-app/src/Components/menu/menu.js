@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/anchor-has-content */
 import { FiMoon } from 'react-icons/fi'
-import { TiThMenu } from 'react-icons/ti'
+//import { TiThMenu } from 'react-icons/ti'
 import { GiPadlock } from 'react-icons/gi'
 import React, {useState} from 'react';
 import './menu.css'
