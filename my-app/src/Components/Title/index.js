@@ -1,5 +1,8 @@
-function Title(props) {
-  return <h3>{props.Title}</h3>;
-}
+import React from 'react';
 
-export default Title;
+function Title(props) {
+    return(
+    <h3>{props.Title}</h3>
+  )}
+
+  export default Title;

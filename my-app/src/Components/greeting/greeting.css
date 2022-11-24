@@ -1,32 +1,17 @@
 .greeting {
-
-    width: 35px;
-    height: 71px;
-    left: 540px;
-    top: 90px;
-
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 71px;
-    
-
+    font-size: 5rem;
+    justify-content: center;
     color: rgba(1, 42, 74, 1);
+    height:0vh;
 }
 .dark .greeting {
-    
-    width: 352px;
-    height: 71px;
-    left: 540px;
-    top: 90px;
-
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 71px;
-    
-
+    font-size: 5rem;
+    justify-content: center;
     color: rgba(97, 165, 194, 1);
 }

@@ -3,20 +3,39 @@ img {
     height:60%;
     
     padding-bottom: 5px;
-    padding-top: 6.5vh;
-    align-content: center;
+    padding-top: 1vh;
+
+    align-content: center; 
+}
+.dark .img {
+    width: 40%;
+    height:60%;
+    
+    padding-bottom: 5px;
+    padding-top: 1vh;
+
+    align-content: center; 
 }
 
-#FlashCards .cardContainer {
+.card {
     width: 100%;
     height: 100%;
-    border-radius:15px;
+    border-radius:10px;
     color: #012A4A;
     text-align: center;
     font-size:1.8rem;
     justify-content:space-around;
     display: flexbox;
-    
+} 
+.dark .card {
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    color: rgba(97, 165, 194, 1);
+    text-align: center;
+    font-size:1.8rem;
+    justify-content:space-around;
+    display: flexbox;
 } 
 
 .dark img {
@@ -24,10 +43,11 @@ img {
     height: 16vh;
     padding-bottom: 15px;
     padding-top: 7vh;
+    
 
 }
 
-.dark .container {
+.dark .card {
     width: 60vw;
     height: 33vh;
     border-radius: 10px;

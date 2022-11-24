@@ -12,32 +12,13 @@ import { FITNESS_ROUTE, GAMES_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES
 import './home.css';
 
 const Home = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
-
-  React.useEffect(() => {
-    const json = localStorage.getItem("elaters-dark-mode");
-    const currentMode = JSON.parse(json);
-    if (currentMode) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
-
-  React.useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-    const json = JSON.stringify(darkMode);
-    localStorage.setItem("elaters-dark-mode", json);
-  }, [darkMode]);
+  
 
   return (
       <div className="Home">
     <Menu/>
      <Greeting name={'Bob'}/>
+     <div className="cardContainer">
       <Card
         src={LightModeQuestion}
         alt="FlashCards"
@@ -54,9 +35,9 @@ const Home = () => {
       />
       <Card
         src={LightModeDocument}
-        alt="Notes and Documents"
-        id="NotesandDocuments"
-        title="Notes and Documents"
+        alt="Documents"
+        id="Documents"
+        title="Documents"
         route="/"
       />
       <Card
@@ -80,6 +61,7 @@ const Home = () => {
         title="Exercise"
         route={FITNESS_ROUTE}
       />
+    </div>
     </div>
   );
 };
