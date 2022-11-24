@@ -13,34 +13,15 @@ import LightModeFitness from "./Components/images/LightModeFitness.png";
 
 
 function App() {
-    const [darkMode, setDarkMode] = React.useState(false);
-
-    React.useEffect(() => {
-      const json = localStorage.getItem("elaters-dark-mode");
-      const currentMode = JSON.parse(json);
-      if (currentMode) {
-        setDarkMode(true);
-      } else {
-        setDarkMode(false);
-      }
-    }, []);
-
-    React.useEffect(() => {
-      if (darkMode) {
-        document.body.classList.add("dark");
-      } else {
-        document.body.classList.remove("dark");
-      }
-      const json = JSON.stringify(darkMode);
-    localStorage.setItem("elaters-dark-mode", json);
-    }, [darkMode]);
+  
 
   return (
     <div className="App">
-     <header><Greeting name={'Fred'}/></header>
     <Menu/>
-    <button onClick={()=> setDarkMode(!darkMode)}>Toggle Dark Mode</button>
-
+     <Greeting name={'Bob'}/>
+    
+  
+    <div className="container">
       <Card
         src={LightModeQuestion}
         alt="FlashCards"
@@ -55,9 +36,9 @@ function App() {
       />
       <Card
         src={LightModeDocument}
-        alt="Notes and Documents"
-        id="NotesandDocuments"
-        Title="Notes and Documents"
+        alt="Documents"
+        id="Documents"
+        Title="Documents"
       />
       <Card src={LightModeGames} alt="Games" id="Games" Title="Games" />
       <Card src={LightModeVideo} alt="Videos" id="Videos" Title="Videos" />
@@ -67,6 +48,7 @@ function App() {
         id="Exercise"
         Title="Exercise"
       />
+      </div>
     </div>
   );
 };

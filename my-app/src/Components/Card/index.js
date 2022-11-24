@@ -4,7 +4,7 @@ import Title from "../Title/index";
 
 function Card(props) {
   return (
-    <div className="container" id={props.id}>
+    <div className="cardContainer" id={props.id}>
       <Image src={props.src} alt={props.alt} />
       <Title Title={props.Title} />
     </div>
