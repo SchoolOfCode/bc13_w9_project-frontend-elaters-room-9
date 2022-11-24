@@ -8,6 +8,7 @@ import Card from "../Card/index.js";
 import Menu from "../menu/menu";
 import Greeting from "../greeting/greeting";
 import React from "react";
+import { FITNESS_ROUTE, GAMES_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
 
 const Home = () => {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -43,28 +44,44 @@ const Home = () => {
         src={LightModeQuestion}
         alt="FlashCards"
         id="FlashCards"
-        Title="FlashCards"
+        title="FlashCards"
+        route="/"
       />
       <Card
         src={LightModeCalendar}
         alt="Calendar"
         id="Calendar"
-        Title="Calendar"
+        title="Calendar"
+        route="/"
       />
       <Card
         src={LightModeDocument}
         alt="Notes and Documents"
         id="NotesandDocuments"
-        Title="Notes and Documents"
+        title="Notes and Documents"
+        route="/"
       />
-      <Card src={LightModeGames} alt="Games" id="Games" Title="Games" />
-      <Card src={LightModeVideo} alt="Videos" id="Videos" Title="Videos" />
+      <Card
+        src={LightModeGames}
+        alt="Games"
+        id="Games"
+        title="Games"
+        route={GAMES_ROUTE}
+      />
+      <Card
+        src={LightModeVideo}
+        alt="Videos"
+        id="Videos"
+        title="Videos"
+        route={VIDEOS_ROUTE}
+      />
       <Card
         src={LightModeFitness}
         alt="Exercise - an App for 30 Minute daily workout"
         id="Exercise"
-        Title="Exercise"
-      />{" "}
+        title="Exercise"
+        route={FITNESS_ROUTE}
+      />
     </div>
   );
 };

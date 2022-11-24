@@ -1,5 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-
 const Games = () => {
   return (
     <div className="Games">
