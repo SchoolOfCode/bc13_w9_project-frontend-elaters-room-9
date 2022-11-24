@@ -3,7 +3,8 @@ import "./Components/greeting/greeting.css";
 import React from "react";
 import Videos from "./Components/Videos";
 import Fitness from "./Components/Fitness";
-
+import CalendarApp from './Components/Calendar/index'
+import QuizApp from './Components/Quiz/QuizApp'
 import Home from "./Components/Home";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Games from "./Components/Games";
@@ -28,11 +29,7 @@ function App() {
             <Route exact path={FITNESS_ROUTE} element={<Fitness />}></Route>
             <Route exact path={GAMES_ROUTE} element={<Games />}></Route>
             <Route exact path={QUIZ_ROUTE} element={<QuizApp />}></Route>
-            <Route
-              exact
-              path={CALENDAR_ROUTE}
-              element={<CalendarApp />}
-            ></Route>
+            <Route exact path={CALENDAR_ROUTE} element={<CalendarApp />}></Route>
             <Route exact path={DOCUMENTS_ROUTE} element={<Videos />}></Route>
           </Routes>
         </div>
