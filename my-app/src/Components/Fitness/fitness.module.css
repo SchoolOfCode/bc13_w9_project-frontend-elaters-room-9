@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Rubik;
+  src: url("https: //fonts.google.com/specimen/Rubik");
+}
+
+.alloffitness {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+  background: #a9d6e5;
+}
+
+.alloffitness > * {
+  padding: 1px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header ul {
+  display: flex;
+  order: 1;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.container {
+  display: grid;
+  width: 50vw;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  grid-gap: 2.2rem;
+  padding: 1rem;
+  flex: auto;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 10vh;
+  margin-right: 10vw;
+  margin-left: 15vw;
+  width: 70vw;
+}

@@ -1,4 +1,4 @@
-import style from "./fitness.modules.css";
+import style from "./fitness.module.css";
 
 const Fitness = () => {
   const fitness = [
@@ -27,12 +27,14 @@ const Fitness = () => {
   ];
 
   return (
-    <div className="Fitness">
+    <div className={style.alloffitness}>
+      <header class={style.header}>
       <h2> Fitness and Mental Health </h2>
-
-      <div className="container">
+      </header>
+      <main class={style.main}>
+      <div className={style.container}>
         {fitness.map((fitness) => (
-          <div className="fitness">
+          <div className={style.fitness}>
             <iframe
               src={fitness.url}
               title={fitness.title}
@@ -42,6 +44,8 @@ const Fitness = () => {
           </div>
         ))}
       </div>
+      </main>
+      <footer class={style.footer}></footer>
     </div>
   );
 };
