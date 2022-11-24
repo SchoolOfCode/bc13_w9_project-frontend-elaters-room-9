@@ -1,4 +1,4 @@
-import style from "./Videos.modules.css";
+import style from "./Videos.module.css";
 
 const Videos = () => {
   const videos = [
@@ -25,12 +25,14 @@ const Videos = () => {
   ];
 
   return (
-    <div className="Videos">
-      <h2> Videos, Lectures & Resources </h2>
-
+    <div className={style.allofvideo}>
+      <header class={style.header}>
+        <h2> Videos, Lectures & Resources </h2>
+      </header>
+      <main class={style.main}>
       <div className={style.container}>
         {videos.map((video) => (
-          <div className={style.videos}>
+          <div className="video">
             <iframe
               src={video.url}
               title={video.title}
@@ -40,6 +42,8 @@ const Videos = () => {
           </div>
         ))}
       </div>
+      </main>
+      <footer class={style.footer}></footer>
     </div>
   );
 };
