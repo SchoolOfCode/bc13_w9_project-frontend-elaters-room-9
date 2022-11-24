@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import style from "./games.modules.css"
+=======
+import style from "./games.module.css";
+>>>>>>> main
 
 const Games = () => {
   const games = [
@@ -25,6 +29,7 @@ const Games = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <div className="Games">
       <h2> Games </h2>
 
@@ -45,6 +50,32 @@ const Games = () => {
           </div>
         ))}
       </div>
+=======
+    <div className={style.allofgames}>
+      <header class={style.header}>
+        <h2> Games </h2>
+      </header>
+      <main class={style.main}>
+        <div className={style.container}>
+          {games.map((games) => (
+            <div className={style.games}>
+              <iframe
+                src={games.url}
+                allowtransparency="true"
+                width="485"
+                height="375"
+                frameborder="0"
+                scrolling="no"
+                title={games.title}
+                key={games.key}
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+      </main>
+      <footer class={style.footer}></footer>
+>>>>>>> main
     </div>
   );
 };

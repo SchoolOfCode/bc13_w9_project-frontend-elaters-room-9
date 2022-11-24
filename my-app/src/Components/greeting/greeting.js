@@ -1,5 +1,6 @@
 import React from 'react';
-import './greeting.css'
+import './greeting.css';
+
 
 
 const Greeting = (props) =>{

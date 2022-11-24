@@ -8,56 +8,44 @@ import Card from "../Card/index.js";
 import Menu from "../menu/menu";
 import Greeting from "../greeting/greeting";
 import React from "react";
+<<<<<<< HEAD
 import { FITNESS_ROUTE, GAMES_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
+=======
+import { CALENDAR_ROUTE, DOCUMENTS_ROUTE, FITNESS_ROUTE, GAMES_ROUTE, QUIZ_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
+>>>>>>> main
 import './home.css';
 
 const Home = () => {
-  const [darkMode, setDarkMode] = React.useState(false);
-
-  React.useEffect(() => {
-    const json = localStorage.getItem("elaters-dark-mode");
-    const currentMode = JSON.parse(json);
-    if (currentMode) {
-      setDarkMode(true);
-    } else {
-      setDarkMode(false);
-    }
-  }, []);
-
-  React.useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-    const json = JSON.stringify(darkMode);
-    localStorage.setItem("elaters-dark-mode", json);
-  }, [darkMode]);
+  
 
   return (
       <div className="Home">
     <Menu/>
      <Greeting name={'Bob'}/>
+<<<<<<< HEAD
+=======
+     <div className="cardContainer">
+>>>>>>> main
       <Card
         src={LightModeQuestion}
         alt="FlashCards"
         id="FlashCards"
         title="FlashCards"
-        route="/"
+        route={QUIZ_ROUTE}
       />
       <Card
         src={LightModeCalendar}
         alt="Calendar"
         id="Calendar"
         title="Calendar"
-        route="/"
+        route={CALENDAR_ROUTE}
       />
       <Card
         src={LightModeDocument}
-        alt="Notes and Documents"
-        id="NotesandDocuments"
-        title="Notes and Documents"
-        route="/"
+        alt="Documents"
+        id="Documents"
+        title="Documents"
+        route={DOCUMENTS_ROUTE}
       />
       <Card
         src={LightModeGames}
@@ -80,6 +68,7 @@ const Home = () => {
         title="Exercise"
         route={FITNESS_ROUTE}
       />
+    </div>
     </div>
   );
 };
