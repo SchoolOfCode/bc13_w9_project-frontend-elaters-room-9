@@ -11,7 +11,7 @@ function Card({ id, alt, src, title, route }) {
   };
 
   return (
-    <div className="container" id={id} onClick={handleClick}>
+    <div className="cardContainer" id={id} onClick={handleClick}>
       <Image src={src} alt={alt} />
       <Title Title={Title} />
     </div>

@@ -9,6 +9,7 @@ import Menu from "../menu/menu";
 import Greeting from "../greeting/greeting";
 import React from "react";
 import { FITNESS_ROUTE, GAMES_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
+import './home.css';
 
 const Home = () => {
   const [darkMode, setDarkMode] = React.useState(false);
@@ -34,7 +35,6 @@ const Home = () => {
   }, [darkMode]);
 
   return (
-    <div>
       <div className="Home">
     <Menu/>
      <Greeting name={'Bob'}/>
@@ -80,7 +80,6 @@ const Home = () => {
         title="Exercise"
         route={FITNESS_ROUTE}
       />
-    </div>
     </div>
   );
 };
