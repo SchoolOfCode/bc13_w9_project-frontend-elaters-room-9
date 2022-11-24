@@ -7,9 +7,9 @@ function Question() {
   const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
 
   return (
-    <div>
-      <div className="question">{currentQuestion.question}</div>
-      <div className="answers">
+    <div className="QuizDiv">
+      <div className="question QuizDiv">{currentQuestion.question}</div>
+      <div className="answers QuizDiv">
         {quizState.answers.map((answer, index) => (
           <Answer
             answerText={answer}

@@ -17,8 +17,6 @@
     width: 100vw;
     height: 100vh;
     margin:0px;
-    background-size: cover;
-    background: #A9D6E5;
   }
   
   
@@ -38,7 +36,6 @@
     background-size: cover;
     background: #065A60;
   }
-  
   .cardContainer {
     display: grid;
     width: fit-content;
@@ -59,4 +56,3 @@
     padding: 2.5rem;
     flex: auto;
   }
- 

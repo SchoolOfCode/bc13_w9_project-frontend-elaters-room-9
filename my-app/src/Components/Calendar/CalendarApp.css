@@ -1,6 +1,17 @@
+@font-face {
+    font-family: Rubik;
+    src: url('https: //fonts.google.com/specimen/Rubik');
+}
+
+* {
+    font-family: Rubik;
+}
+
 .CalendarApp {
     text-align: center;
-    border: thick 5px black solid;
+    
+    color: #012A4A;
+    
     
 }
 
@@ -16,9 +27,12 @@
 }
 
 #button{
-    background-color: #61A5C2;
-    border: none;
+    color: #012A4A;
+    background-color: white;
+    border: 0.5px #012A4A normal;
     margin-left: 10px;
     height:22px;
     border-radius: 3px;
 }
+ 
+
