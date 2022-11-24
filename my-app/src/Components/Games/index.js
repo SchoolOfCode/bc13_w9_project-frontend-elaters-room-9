@@ -1,7 +1,7 @@
 import style from "./games.modules.css"
 
 const Games = () => {
-  const videos = [
+  const games = [
     {
       url: "https://scratch.mit.edu/projects/639886506/embed",
       title: "Taco Rush",
@@ -29,7 +29,7 @@ const Games = () => {
       <h2> Games </h2>
 
       <div className="container">
-        {videos.map((games) => (
+        {games.map((games) => (
           <div className="games">
             <iframe
               src={games.url}
