@@ -1,9 +1,9 @@
-* {
+ * {
   margin: 0;
   padding: 0;
 }
 
-.Home {
+/* .Home {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -46,4 +46,4 @@
   grid-gap: 2rem;
   padding: 1rem;
   flex: auto;
-}
+} */
