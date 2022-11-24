@@ -4,8 +4,9 @@
   }
   
   .Home {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    flex:content;
     gap: 40px;
     column-gap: 5px;
     text-align: center;
@@ -15,9 +16,7 @@
     margin-left: 15vw;
     width: 100vw;
     height: 100vh;
-    margin:0;
-    background-size: cover;
-    background: #A9D6E5;
+    margin:0px;
   }
   
   
@@ -38,13 +37,27 @@
     background: #065A60;
   }
   
-  .home .container {
+  .cardContainer {
     display: grid;
-    width: 100%;
+    width: fit-content;
+    height: 30vh;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 50px;
+    column-gap: 2rem;
     grid-gap: 2rem;
-    padding: 1rem;
+    padding: 2.5rem;
     flex: auto;
   }
-  
+  .dark .cardContainer {
+    display: grid;
+    width: fit-content;
+    height: 30vh;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    grid-gap: 2rem;
+    padding: 2.5rem;
+    flex: auto;
+  }
+  body{
+    background-size: cover;
+    background: #A9D6E5;
+  }
