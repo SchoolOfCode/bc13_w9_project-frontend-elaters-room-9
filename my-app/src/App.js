@@ -1,56 +1,37 @@
 import "./App.css";
-import Greeting from "./Components/greeting/greeting";
-import './Components/greeting/greeting.css'
-import Menu from "./Components/menu/menu";
-import React from 'react';
-import Card from "./Components/Card/index.js";
-import LightModeQuestion from "./Components/images/LightModeQuestion.png";
-import LightModeCalendar from "./Components/images/LightModeCalendar.png";
-import LightModeDocument from "./Components/images/LightModeDocument.png";
-import LightModeGames from "./Components/images/LightModeGames.png";
-import LightModeVideo from "./Components/images/LightModeVideo.png";
-import LightModeFitness from "./Components/images/LightModeFitness.png";
+import "./Components/greeting/greeting.css";
+import React from "react";
+import Videos from "./Components/Videos";
+import Fitness from "./Components/Fitness";
 
+import Home from "./Components/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Games from "./Components/Games";
+import {
+  FITNESS_ROUTE,
+  GAMES_ROUTE,
+  HOME_ROUTE,
+  VIDEOS_ROUTE,
+} from "./constants/ROUTES";
 
 function App() {
-  
-
+   
   return (
-    <div className="App">
-    <Menu/>
-     <Greeting name={'Bob'}/>
-    
-  
-    <div className="container">
-      <Card
-        src={LightModeQuestion}
-        alt="FlashCards"
-        id="FlashCards"
-        Title="FlashCards"
-      />
-      <Card
-        src={LightModeCalendar}
-        alt="Calendar"
-        id="Calendar"
-        Title="Calendar"
-      />
-      <Card
-        src={LightModeDocument}
-        alt="Documents"
-        id="Documents"
-        Title="Documents"
-      />
-      <Card src={LightModeGames} alt="Games" id="Games" Title="Games" />
-      <Card src={LightModeVideo} alt="Videos" id="Videos" Title="Videos" />
-      <Card
-        src={LightModeFitness}
-        alt="Exercise - an App for 30 Minute daily workout"
-        id="Exercise"
-        Title="Exercise"
-      />
+<Router>
+      <div className="App">
+        <div className="content">
+          <Routes>
+            <Route exact path={HOME_ROUTE} element={<Home />}></Route>
+            <Route exact path={VIDEOS_ROUTE} element={<Videos />}></Route>
+            <Route exact path={FITNESS_ROUTE} element={<Fitness />}></Route>
+            <Route exact path={GAMES_ROUTE} element={<Games />}></Route>
+            <Route exact path="/flashcards" element={<Games />}></Route>
+            <Route exact path="/calendar" element={<Games />}></Route>
+            <Route exact path="/documents" element={<Games />}></Route>
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
-};
-
+}
 export default App;

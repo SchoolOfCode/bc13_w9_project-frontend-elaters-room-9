@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.App {
+.Home {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 40px;
@@ -21,7 +21,7 @@
 }
 
 
-.dark .App {
+.dark .Home {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 40px;

@@ -1,12 +1,19 @@
 import Image from "../Image/index";
 import "./Card.css";
 import Title from "../Title/index";
+import { useNavigate } from "react-router-dom";
 
-function Card(props) {
+function Card({ id, alt, src, title, route }) {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(route);
+  };
+
   return (
-    <div className="cardContainer" id={props.id}>
-      <Image src={props.src} alt={props.alt} />
-      <Title Title={props.Title} />
+    <div className="container" id={id} onClick={handleClick}>
+      <Image src={src} alt={alt} />
+      <Title Title={Title} />
     </div>
   );
 }
