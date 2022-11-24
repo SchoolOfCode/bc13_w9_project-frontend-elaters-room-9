@@ -35,11 +35,9 @@ const Home = () => {
 
   return (
     <div>
-      <header>
-        <Greeting name={"Fred"} />
-      </header>
-      <Menu />
-      <button onClick={() => setDarkMode(!darkMode)}>Toggle Dark Mode</button>
+      <div className="Home">
+    <Menu/>
+     <Greeting name={'Bob'}/>
       <Card
         src={LightModeQuestion}
         alt="FlashCards"
@@ -82,6 +80,7 @@ const Home = () => {
         title="Exercise"
         route={FITNESS_ROUTE}
       />
+    </div>
     </div>
   );
 };
