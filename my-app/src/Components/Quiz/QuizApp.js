@@ -4,7 +4,7 @@ import "./Quiz.css";
 
 function QuizApp() {
   return (
-    <div>
+    <div className="QuizDiv">
       <QuizProvider>
         <Quiz />
       </QuizProvider>

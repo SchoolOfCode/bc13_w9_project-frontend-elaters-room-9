@@ -8,7 +8,11 @@ import Card from "../Card/index.js";
 import Menu from "../menu/menu";
 import Greeting from "../greeting/greeting";
 import React from "react";
+<<<<<<< HEAD
+import { FITNESS_ROUTE, GAMES_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
+=======
 import { CALENDAR_ROUTE, DOCUMENTS_ROUTE, FITNESS_ROUTE, GAMES_ROUTE, QUIZ_ROUTE, VIDEOS_ROUTE } from "../../constants/ROUTES";
+>>>>>>> main
 import './home.css';
 
 const Home = () => {
@@ -18,7 +22,10 @@ const Home = () => {
       <div className="Home">
     <Menu/>
      <Greeting name={'Bob'}/>
+<<<<<<< HEAD
+=======
      <div className="cardContainer">
+>>>>>>> main
       <Card
         src={LightModeQuestion}
         alt="FlashCards"

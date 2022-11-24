@@ -1,9 +1,18 @@
-body {
-    background-color: #e4e4e4;
+@font-face {
+    font-family: Rubik;
+    src: url('https: //fonts.google.com/specimen/Rubik');
 }
 
-div {
+*{
+    font-family: Rubik;
+}
+body {
+    background-color: #A9D6E5;
+}
+
+.QuizDiv{
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .quiz {
@@ -13,14 +22,14 @@ div {
 }
 
 .question {
-    background-color: #0094da;
+    background-color: #012A4A;
     color: white;
     padding: 10px;
     min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .results {
@@ -30,7 +39,7 @@ div {
 }
 
 .congratulations {
-    background-color: #0094da;
+    background-color: #012A4A;
     padding: 20px;
     font-size: 36px;
     color: #fff;
@@ -45,11 +54,12 @@ div {
 .answer {
     width: 48%;
     background: #fff;
-    border: 2px solid #0094da;
+    border: 2px solid #012A4A;
     min-height: 70px;
     cursor: pointer;
     margin-bottom: 30px;
     display: flex;
+    border-radius: 5px;
 }
 
 .answers {
@@ -60,8 +70,8 @@ div {
 }
 
 .answer-letter {
-    font-size: 30px;
-    background-color: #0084da;
+    font-size: 40px;
+    background-color: #014FA6;
     color: #fff;
     width: 70px;
     display: flex;
@@ -71,6 +81,7 @@ div {
 
 .answer-text {
     font-weight: 600;
+    font-size: 23px;
     display: flex;
     align-items: center;
     margin-left: 20px;
@@ -95,7 +106,7 @@ div {
 .next-button {
     margin: 0 auto;
     color: #fff;
-    background: #0b0e21;
+    background: #012A4A;
     width: 300px;
     font-size: 18px;
     font-weight: 600;
@@ -117,6 +128,10 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.endMessage{
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 
 .disabled-answer {

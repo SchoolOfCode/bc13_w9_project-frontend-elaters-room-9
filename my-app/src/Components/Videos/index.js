@@ -25,12 +25,19 @@ const Videos = () => {
   ];
 
   return (
+<<<<<<< HEAD
+    <div className="Videos">
+      <h2> Videos, Lectures & Resources </h2>
+
+      <div className="container">
+=======
     <div className={style.allofvideo}>
       <header class={style.header}>
         <h2> Videos, Lectures & Resources </h2>
       </header>
       <main class={style.main}>
       <div className={style.container}>
+>>>>>>> main
         {videos.map((video) => (
           <div className="video">
             <iframe

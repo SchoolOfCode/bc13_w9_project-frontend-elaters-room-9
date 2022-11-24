@@ -16,13 +16,10 @@ import {
   QUIZ_ROUTE,
   VIDEOS_ROUTE,
 } from "./constants/ROUTES";
-import CalendarApp from "./Components/Calendar/index";
-import QuizApp from "./Components/Quiz/QuizApp";
 
 function App() {
-   
   return (
-<Router>
+    <Router>
       <div className="App">
         <div className="content">
           <Routes>
@@ -30,8 +27,12 @@ function App() {
             <Route exact path={VIDEOS_ROUTE} element={<Videos />}></Route>
             <Route exact path={FITNESS_ROUTE} element={<Fitness />}></Route>
             <Route exact path={GAMES_ROUTE} element={<Games />}></Route>
-            <Route exact path={QUIZ_ROUTE} element={<QuizApp/>}></Route>
-            <Route exact path={CALENDAR_ROUTE} element={<CalendarApp />}></Route>
+            <Route exact path={QUIZ_ROUTE} element={<QuizApp />}></Route>
+            <Route
+              exact
+              path={CALENDAR_ROUTE}
+              element={<CalendarApp />}
+            ></Route>
             <Route exact path={DOCUMENTS_ROUTE} element={<Videos />}></Route>
           </Routes>
         </div>
