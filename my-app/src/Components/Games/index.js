@@ -1,4 +1,4 @@
-import style from "./games.modules.css"
+import style from "./games.module.css";
 
 const Games = () => {
   const games = [
@@ -25,29 +25,32 @@ const Games = () => {
   ];
 
   return (
-    <div className="Games">
-      <h2> Games </h2>
-
-      <div className="container">
-        {games.map((games) => (
-          <div className="games">
-            <iframe
-              src={games.url}
-              allowtransparency="true"
-              width="485"
-              height="375"
-              frameborder="0"
-              scrolling="no"
-              title={games.title}
-              key={games.key}
-              allowFullScreen
-            ></iframe>
-          </div>
-        ))}
-      </div>
+    <div className={style.allofgames}>
+      <header class={style.header}>
+        <h2> Games </h2>
+      </header>
+      <main class={style.main}>
+        <div className={style.container}>
+          {games.map((games) => (
+            <div className={style.games}>
+              <iframe
+                src={games.url}
+                allowtransparency="true"
+                width="485"
+                height="375"
+                frameborder="0"
+                scrolling="no"
+                title={games.title}
+                key={games.key}
+                allowFullScreen
+              ></iframe>
+            </div>
+          ))}
+        </div>
+      </main>
+      <footer class={style.footer}></footer>
     </div>
   );
 };
 
 export default Games;
-
