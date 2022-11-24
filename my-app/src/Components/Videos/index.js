@@ -28,9 +28,9 @@ const Videos = () => {
     <div className="Videos">
       <h2> Videos, Lectures & Resources </h2>
 
-      <div className={style.container}>
+      <div className="container">
         {videos.map((video) => (
-          <div className={style.videos}>
+          <div className="video">
             <iframe
               src={video.url}
               title={video.title}
