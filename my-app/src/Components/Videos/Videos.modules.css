@@ -1,9 +1,13 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+  display: grid;
+  width: 80vw;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  grid-gap: 1.2rem;
+  padding: 1rem;
+  flex: auto;
 }
+
 .video {
   flex: 0 50%;
 }
