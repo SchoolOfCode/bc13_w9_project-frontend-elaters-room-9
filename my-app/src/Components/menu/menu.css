@@ -102,7 +102,21 @@
 =======
   right:8rem;
 }
+.dark .navbar .active {
+  right:8rem;
+}
 .btnMenu {
+  align-items:top;
+  display:block;
+  flex:content;
+  width: 50vw;
+  display: inline-block;
+  margin : 2rem;
+  margin-left: 40rem;
+  padding : 2rem;
+  height: 3rem;
+}
+.dark .btnMenu {
   align-items:top;
   display:block;
   flex:content;
@@ -282,4 +296,13 @@
   .dark .btnMenu{
     padding-top: 3rem;
   }
+<<<<<<< HEAD
+  ul {
+    list-style-type: none;
+  }
+  a{
+    text-decoration: none;
+  }
+=======
+>>>>>>> main
 >>>>>>> main
