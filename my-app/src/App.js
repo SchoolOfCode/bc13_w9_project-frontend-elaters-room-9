@@ -1,16 +1,17 @@
 import "./App.css";
-import Card from "./Components/Card/index.js";
+import * as React from "react";
+/* import Card from "./Components/Card/index.js";
 import LightModeQuestion from "./Components/images/LightModeQuestion.png";
 import LightModeCalendar from "./Components/images/LightModeCalendar.png";
 import LightModeDocument from "./Components/images/LightModeDocument.png";
 import LightModeGames from "./Components/images/LightModeGames.png";
 import LightModeVideo from "./Components/images/LightModeVideo.png";
-import LightModeFitness from "./Components/images/LightModeFitness.png";
+import LightModeFitness from "./Components/images/LightModeFitness.png"; */
 
 function App() {
   return (
     <div className="App">
-      <Card
+      {/* <Card
         src={LightModeQuestion}
         alt="FlashCards"
         id="FlashCards"
@@ -35,7 +36,7 @@ function App() {
         alt="Exercise - an App for 30 Minute daily workout"
         id="Exercise"
         Title="Exercise"
-      />
+      /> */}
     </div>
   );
 }
