@@ -9,7 +9,7 @@
     flex:content;
     gap: 40px;
     column-gap: 5px;
-    text-align: center;
+    text-align:center;
     justify-content: space-evenly;
     margin-top: 20vh;
     margin-right: 15vw;
@@ -17,29 +17,31 @@
     width: 100vw;
     height: 100vh;
     margin:0px;
+    background-color: rgba(169, 214, 229, 1);
   }
   
-  
   .dark .Home {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
+    flex:content;
     gap: 40px;
     column-gap: 5px;
-    text-align: center;
+    text-align:center;
     justify-content: space-evenly;
     margin-top: 20vh;
     margin-right: 15vw;
     margin-left: 15vw;
     width: 100vw;
     height: 100vh;
-    margin:0;
-    background-size: cover;
-    background: #065A60;
+    margin:0px;
+    background-color: rgba(6, 90, 96, 1);
   }
   .cardContainer {
     display: grid;
     width: fit-content;
-    height: 30vh;
+    width: 100vw;
+    height: fit-content;
+    max-height: 1011px;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     grid-gap: 2rem;
@@ -49,10 +51,13 @@
   .dark .cardContainer {
     display: grid;
     width: fit-content;
-    height: 30vh;
+    width: 100vw;
+    height: fit-content;
+    max-height: 1011px;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     grid-gap: 2rem;
     padding: 2.5rem;
     flex: auto;
+    background-color: rgba(6, 90, 96, 1);
   }

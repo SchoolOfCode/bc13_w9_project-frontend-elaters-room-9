@@ -2,16 +2,16 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3rem;
     justify-content: center;
     color: rgba(1, 42, 74, 1);
-    height:0vh;
+    padding-bottom: 1rem;;
 }
 .dark .greeting {
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3rem;
     justify-content: center;
     color: rgba(97, 165, 194, 1);
 }

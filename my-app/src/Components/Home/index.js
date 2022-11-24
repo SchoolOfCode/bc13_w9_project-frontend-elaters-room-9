@@ -17,7 +17,7 @@ const Home = () => {
   return (
       <div className="Home">
     <Menu/>
-     <Greeting name={'Bob'}/>
+     <Greeting name={'Francesca'}/>
      <div className="cardContainer">
       <Card
         src={LightModeQuestion}
