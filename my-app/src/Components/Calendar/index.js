@@ -73,7 +73,7 @@ function CalendarApp() {
         <label>Event Details: </label>
         <input
           type="text"
-          placeholder="Add Title"
+          placeholder="Enter details here"
           style={{ width: "20%", marginRight: "10px" }}
           value={newEvent.title}
           onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
@@ -81,7 +81,7 @@ function CalendarApp() {
 
         <label>Start Date: </label>
         <DatePicker
-          placeholderText="Start Date"
+          placeholderText="Enter Start Date"
           style={{ marginRight: "10px" }}
           selected={newEvent.start}
           onChange={(start) => setNewEvent({ ...newEvent, start })}
@@ -89,7 +89,7 @@ function CalendarApp() {
 
         <label> End Date: </label>
         <DatePicker
-          placeholderText="End Date"
+          placeholderText="Enter End Date"
           selected={newEvent.end}
           onChange={(end) => setNewEvent({ ...newEvent, end })}
         />
