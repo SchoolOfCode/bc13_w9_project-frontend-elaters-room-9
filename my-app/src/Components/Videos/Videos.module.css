@@ -14,16 +14,20 @@
 .allofvideo > * {
   padding: 1px;
 }
+.Videos_container_60h8L {
+  height: 50vh;
+}
 
 .main {
   flex-grow: 1;
+  height:50vh;
 }
 
-.header nav {
+.header{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding-top: 15rem;
 }
 
 .header ul {

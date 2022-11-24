@@ -17,6 +17,8 @@
     width: 100vw;
     height: 100vh;
     margin:0px;
+    background-size: cover;
+    background: #A9D6E5;
   }
   
   
@@ -57,7 +59,4 @@
     padding: 2.5rem;
     flex: auto;
   }
-  body{
-    background-size: cover;
-    background: #A9D6E5;
-  }
+ 
