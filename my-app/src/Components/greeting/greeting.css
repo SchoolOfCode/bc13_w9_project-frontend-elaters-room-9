@@ -1,13 +1,4 @@
 .greeting {
-<<<<<<< HEAD
-
-    width: 35px;
-    height: 71px;
-    left: 540px;
-    top: 90px;
-
-=======
->>>>>>> main
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
@@ -17,26 +8,10 @@
     height:0vh;
 }
 .dark .greeting {
-<<<<<<< HEAD
-    
-    width: 352px;
-    height: 71px;
-    left: 540px;
-    top: 90px;
-
-    font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.5rem;
-    line-height: 71px;
-    
-
-=======
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 5rem;
     justify-content: center;
->>>>>>> main
     color: rgba(97, 165, 194, 1);
 }
