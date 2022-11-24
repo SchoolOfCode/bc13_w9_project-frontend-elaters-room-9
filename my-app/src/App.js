@@ -19,11 +19,10 @@ import {
 import CalendarApp from "./Components/Calendar/index";
 import QuizApp from "./Components/Quiz/QuizApp";
 
-// Need to change the element in lines 24, 25 and 26 to match flashcards, calendar and documents component import
-
 function App() {
+   
   return (
-    <Router>
+<Router>
       <div className="App">
         <div className="content">
           <Routes>
@@ -40,5 +39,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

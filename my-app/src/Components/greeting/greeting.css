@@ -1,9 +1,9 @@
-#greeting {
-    position: absolute;
-    width: 352px;
+.greeting {
+
+    width: 35px;
     height: 71px;
     left: 540px;
-    top: 117px;
+    top: 90px;
 
     font-family: 'Rubik';
     font-style: normal;
@@ -14,17 +14,17 @@
 
     color: rgba(1, 42, 74, 1);
 }
-.dark #greeting {
-    position: absolute;
+.dark .greeting {
+    
     width: 352px;
     height: 71px;
     left: 540px;
-    top: 117px;
+    top: 90px;
 
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
+    font-size: 3.5rem;
     line-height: 71px;
     
 
