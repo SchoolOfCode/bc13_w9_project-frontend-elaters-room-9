@@ -1,17 +1,14 @@
-img {
-    width: 40%;
-    height:60%;
-    padding-bottom: 5px;
-    padding-top: 1vh;
+.card .image {
+    width: 100%;
+    height:150px;
+    padding-bottom: 1vh;;
+    padding-top: 2vh;
     align-content: center; 
+    background-position:center;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
-.dark img {
-    width: 40%;
-    height:60%;
-    padding-bottom: 5px;
-    padding-top: 1vh;
-    align-content: center; 
-}
+
 .card {
     width: 100%;
     height: 100%;
@@ -37,49 +34,83 @@ img {
     background-color: #89C2D9;
     
 }
-
+#FlashCards > .image {
+    background-image: url(../images/LightModeQuestion.png);
+}
 .dark #FlashCards{
     background-color: rgba(39, 38, 64, 1);
     
+}
+.dark #FlashCards > .image {
+    background-image: url(../images/DarkModeQuestion.png);
+
 }
 
 #Calendar{
     background-color: #61A5C2;
 }
+#Calendar > .image {
+    background-image: url(../images/LightModeCalendar.png);
+}
 
 .dark #Calendar{
     background-color:rgba(49, 34, 68, 1);
+}
+.dark #Calendar > .image {
+    background-image: url(../images/DarkModeCalendar.png);
 }
 
 
 #Documents {
     background-color: #468FAF;
 }
+#Documents > .image {
+    background-image: url(../images/LightModeDocument.png);
+}
 
 .dark #Documents {
     background-color: rgba(77, 25, 77, 1);
+}
+.dark #Documents > .image {
+    background-image: url(../images/DarkModeDocuments.png);
 }
 
 #Games {
     background-color: #89C2D9;
 }
+#Games > .image {
+    background-image: url(../images/LightModeGames.png);
+}
 
 .dark #Games {
     background-color:rgba(39, 38, 64, 1);
 }
-
+.dark #Games > .image{
+    background-image: url(../images/DarkModeGames.png);
+}
 #Videos {
     background-color: #61A5C2;
+}
+#Videos > .image {
+    background-image: url(../images/LightModeVideo.png);
 }
 
 .dark #Videos {
     background-color: rgba(49, 34, 68, 1);
 }
+.dark #Videos > .image {
+    background-image: url(../images/DarkModeVideos.png);
+}
 
 #Exercise {
     background-color: #468FAF;
 }
-
+#Exercise > .image {
+    background-image: url(../images/LightModeFitness.png);
+}
 .dark #Exercise {
     background-color: rgba(77, 25, 77, 1);
+}
+.dark #Exercise > .image {
+    background-image: url(../images/DarkModeFitness.png);
 }

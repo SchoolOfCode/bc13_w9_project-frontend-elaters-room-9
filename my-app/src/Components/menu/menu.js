@@ -44,7 +44,7 @@ const Menu = () => {
           <li><a href='#'>Settings</a></li>
           <li><a href='#'><GiPadlock className='icon'/>Log Out</a></li>
       </ul>
-      <button className='btn' onClick={()=> setDarkMode(!darkMode)}><FiMoon className='icon'/></button>
+      <button className='btn' onClick={()=> setDarkMode(!darkMode)}></button>
       </div>
     </div>
 )}
