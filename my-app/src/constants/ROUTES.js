@@ -4,4 +4,4 @@ export const WELLBEING_ROUTE = "/wellbeing";
 export const VIDEOS_ROUTE = "/videos"
 export const QUIZ_ROUTE = "/quiz";
 export const DOCUMENTS_ROUTE = "/documents";
-export const CALENDAR_ROUTE = "/calendar"
+export const CALENDAR_ROUTE = "/calendar";
