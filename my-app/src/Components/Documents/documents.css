@@ -1,0 +1,25 @@
+.Navbar {
+   width: 100vw;
+   height: 10vh;
+   display: flex;
+   margin-top: 5vh;
+   position: static;
+   align-items: center;
+   justify-content: center;
+   font-size: 2.5rem;
+   color: #012A4A;;
+}
+
+.holdingText {
+    width: 100vw;
+   height: 10vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 2.2rem;
+   margin-top: 25vh;
+   color: #012A4A;
+   transition: 0.1s ease-in-out;
+   right: -25%;
+
+}

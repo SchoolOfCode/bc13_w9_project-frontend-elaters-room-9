@@ -1,6 +1,6 @@
 export const HOME_ROUTE = "/"
 export const GAMES_ROUTE = "/games";
-export const FITNESS_ROUTE = "/fitness";
+export const WELLBEING_ROUTE = "/wellbeing";
 export const VIDEOS_ROUTE = "/videos"
 export const QUIZ_ROUTE = "/quiz";
 export const DOCUMENTS_ROUTE = "/documents";

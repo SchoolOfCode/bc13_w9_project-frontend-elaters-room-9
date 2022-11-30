@@ -1,8 +1,7 @@
-import "./App.css";
-import "./Components/greeting/greeting.css";
 import React from "react";
+import Documents from './Components/Documents'
 import Videos from "./Components/Videos";
-import Fitness from "./Components/Fitness";
+import Wellbeing from "./Components/Wellbeing";
 import CalendarApp from './Components/Calendar/index'
 import QuizApp from './Components/Quiz/QuizApp'
 import Home from "./Components/Home";
@@ -11,7 +10,7 @@ import Games from "./Components/Games";
 import {
   CALENDAR_ROUTE,
   DOCUMENTS_ROUTE,
-  FITNESS_ROUTE,
+  WELLBEING_ROUTE,
   GAMES_ROUTE,
   HOME_ROUTE,
   QUIZ_ROUTE,
@@ -24,13 +23,13 @@ function App() {
       <div className="App">
         <div className="content">
           <Routes>
-            <Route exact path={HOME_ROUTE} element={<Home />}></Route>
-            <Route exact path={VIDEOS_ROUTE} element={<Videos />}></Route>
-            <Route exact path={FITNESS_ROUTE} element={<Fitness />}></Route>
-            <Route exact path={GAMES_ROUTE} element={<Games />}></Route>
-            <Route exact path={QUIZ_ROUTE} element={<QuizApp />}></Route>
-            <Route exact path={CALENDAR_ROUTE} element={<CalendarApp />}></Route>
-            <Route exact path={DOCUMENTS_ROUTE} element={<Videos />}></Route>
+            <Route exact path={HOME_ROUTE} element={<Home/>}></Route>
+            <Route exact path={VIDEOS_ROUTE} element={<Videos/>}></Route>
+            <Route exact path={WELLBEING_ROUTE} element={<Wellbeing/>}></Route>
+            <Route exact path={GAMES_ROUTE} element={<Games/>}></Route>
+            <Route exact path={QUIZ_ROUTE} element={<QuizApp/>}></Route>
+            <Route exact path={CALENDAR_ROUTE} element={<CalendarApp/>}></Route>
+            <Route exact path={DOCUMENTS_ROUTE} element={<Documents/>}></Route>
           </Routes>
         </div>
       </div>

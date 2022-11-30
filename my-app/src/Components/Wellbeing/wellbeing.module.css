@@ -1,17 +1,13 @@
-@font-face {
-  font-family: Rubik;
-  src: url("https: //fonts.google.com/specimen/Rubik");
-}
-
-.alloffitness {
+.allOfWellbeing {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   background: #a9d6e5;
 }
 
-.alloffitness > * {
+.allOffWellbeing > * {
   padding: 1px;
 }
 
@@ -35,16 +31,14 @@
 
 .container {
   display: grid;
-  width: 50vw;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  grid-gap: 2.2rem;
+  column-gap: 30px;
+  grid-gap: 3rem;
   padding: 1rem;
   flex: auto;
-  border-radius: 8px;
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 15vh;
   margin-right: 10vw;
-  margin-left: 15vw;
+  margin-left: 10vw;
   width: 70vw;
 }
