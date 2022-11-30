@@ -1,7 +1,17 @@
-import style from "./fitness.module.css";
+import style from "./wellbeing.module.css";
 
-const Fitness = () => {
-  const fitness = [
+/**
+ * 
+ * This Wellbeing component currently holds a wellbeing array,
+ * this array has a small selection of videos.
+ * It is harcoded in the front end and mapped in the return function.
+ * Future development will look to store a larger selection of videos on the backend,
+ * these will be accessed through the appropriate fetch request.
+ 
+ */
+
+const Wellbeing = () => {
+  const wellbeing = [
     {
       url: "https://www.youtube.com/embed/COp7BR_Dvps",
       title:
@@ -27,18 +37,18 @@ const Fitness = () => {
   ];
 
   return (
-    <div className={style.alloffitness}>
+    <div className={style.allOfWellbeing}>
       <header class={style.header}>
-      <h2> Fitness and Mental Health </h2>
+      <h2> Your Wellbeing </h2>
       </header>
       <main class={style.main}>
       <div className={style.container}>
-        {fitness.map((fitness) => (
-          <div className={style.fitness}>
+        {wellbeing.map((wellbeing) => (
+          <div className={style.wellbeing}>
             <iframe
-              src={fitness.url}
-              title={fitness.title}
-              key={fitness.key}
+              src={wellbeing.url}
+              title={wellbeing.title}
+              key={wellbeing.key}
               allowFullScreen
             ></iframe>
           </div>
@@ -50,4 +60,4 @@ const Fitness = () => {
   );
 };
 
-export default Fitness;
+export default Wellbeing;

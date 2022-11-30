@@ -1,3 +1,8 @@
+/**
+ * 
+ * This is defining what an answer is, and how it dertimines whether it is correct or incorrect.
+ **/
+
 const Answer = ({
   answerText,
   index,
@@ -7,8 +12,7 @@ const Answer = ({
 }) => {
   const letterMapping = ["A", "B", "C", "D"];
   const isCorrectAnswer = currentAnswer && answerText === correctAnswer;
-  const isWrongAnswer =
-    currentAnswer === answerText && currentAnswer !== correctAnswer;
+  const isWrongAnswer = currentAnswer === answerText && currentAnswer !== correctAnswer;
   const correctAnswerClass = isCorrectAnswer ? "correct-answer" : "";
   const wrongAnswerClass = isWrongAnswer ? "wrong-answer" : "";
   const disabledClass = currentAnswer ? "disabled-answer" : "";
